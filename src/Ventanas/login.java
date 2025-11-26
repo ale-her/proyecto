@@ -2,7 +2,7 @@ package Ventanas;
 
 /**
  *
- * @author alehe
+ * @author ale
  */
 import javax.swing.*;
 import java.awt.*;
@@ -16,24 +16,24 @@ public class login extends JFrame {
 
     public login() {
         setTitle("Login");
-        setSize(320,180);
+        setSize(300,160);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         initComponents();
     }
 
     private void initComponents() {
-        tfUser = new JTextField(15);
-        pfPass = new JPasswordField(15);
-        btnLogin = new JButton("Entrar");
+        tfUser = new JTextField(18);
+        pfPass = new JPasswordField(18);
+        btnLogin = new JButton("Acceder");
         btnSalir = new JButton("Salir");
 
         JPanel p = new JPanel(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
         c.insets = new Insets(4,4,4,4);
-        c.gridx = 0; c.gridy = 0; p.add(new JLabel("Usuario:"), c);
+        c.gridx = 0; c.gridy = 0; p.add(new JLabel("user:"), c);
         c.gridx = 1; p.add(tfUser, c);
-        c.gridx = 0; c.gridy = 1; p.add(new JLabel("Contraseña:"), c);
+        c.gridx = 0; c.gridy = 1; p.add(new JLabel("password:"), c);
         c.gridx = 1; p.add(pfPass, c);
         c.gridx = 0; c.gridy = 2; p.add(btnSalir, c);
         c.gridx = 1; p.add(btnLogin, c);
