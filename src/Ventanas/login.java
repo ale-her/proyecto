@@ -26,7 +26,6 @@ public class login extends JFrame {
         tfUser = new JTextField(18);
         pfPass = new JPasswordField(18);
         btnLogin = new JButton("Acceder");
-        btnSalir = new JButton("Salir");
 
         JPanel p = new JPanel(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
